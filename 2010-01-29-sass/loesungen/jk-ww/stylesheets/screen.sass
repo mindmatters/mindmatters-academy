@@ -1,0 +1,55 @@
+!column_width = 302px
+!gutter_width = 10px
+
+=basic-font
+  :font
+    :family "HelveticaNeue", "Helvetica", "Arial", "sans-serif"
+    :size 12px
+    :weight "normal"
+  :line-height 1.4em
+  :color #222
+
+=large-font
+  :font-size 14px
+
+body
+  +basic-font
+
+#container
+  :width = !column_width * 3 + !gutter_width * 2
+  :margin 0 auto
+  &> div
+    :margin-bottom = !gutter_width
+    :overflow hidden
+
+.navigation ul
+  :margin 0
+  :padding 0
+  :list-style-type none
+  :background #ccc
+  :overflow hidden
+  li
+    :float left
+    a
+      :display block
+      :padding = !gutter_width
+      +large-font
+      :border-right 1px solid #eee
+      :color #666
+      :text-decoration none
+      &:hover
+        :background #bbb
+        :color #222
+    &:last-child a
+      :border-right none
+
+#main
+  &> div
+    :float left
+    :margin-right = !gutter_width
+    :padding = !gutter_width
+    :width = !column_width - !gutter_width * 2
+    :overflow hidden
+    :background #ccc
+    &:last-child
+      :margin-right 0

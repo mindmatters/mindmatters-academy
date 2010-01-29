@@ -1,0 +1,27 @@
+Weitere Vortragsplanung
+=======================
+
+Freitag 12.02.2010: Virginio & Dariusch
+---------------------------------------
+
+- Spezifizität von Selektoren
+- Vorstellung der verschiedenen Selektoren und  deren Semantik
+- Vorstellung des Box-Models
+
+**********************
+
+Freitag 19.02.2010: RockSven & ???
+----------------------------------
+
+- Positionierung
+- Floating
+- Layout
+
+**********************
+
+- Grid
+- Compass
+
+**********************
+
+- `em` vs. `px`

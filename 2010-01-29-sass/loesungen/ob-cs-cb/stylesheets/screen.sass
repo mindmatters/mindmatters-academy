@@ -1,0 +1,59 @@
+!bgcolor = #ccc
+!width = 926px
+
+*
+  :padding 0
+  :margin 0
+
+body
+  :padding 10px
+  :align center
+  :font
+    :family "Helvetica", "Arial", "sans-serif"
+    :size 12px
+
+#container
+  :width = !width
+  :margin auto 
+  .navigation, #header, #main
+    :margin-bottom 10px
+
+#header
+  :overflow hidden
+
+.navigation
+  :background-color = !bgcolor
+  :display block
+  :width 100%
+  :overflow hidden
+  :font-size 14px
+  ul
+    :list-style-type none
+    li
+      :float left
+      :padding 10px
+      :border-left 1px solid white
+      a
+        :color #666
+        :text-decoration none
+
+!padding = 15px
+      
+#main
+  :overflow hidden
+  #syntax, #variables, #nesting
+    :width = 302px - 2 * !padding
+    :margin-right 10px
+    :float left
+    :background-color = !bgcolor
+    :padding = !padding
+    h2
+      :padding-bottom = !padding
+    h3, pre, p
+      :padding = !padding 0
+  #nesting
+    :margin-right 0
+    
+    
+    
+    

@@ -1,0 +1,152 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xml:lang="de" xmlns="http://www.w3.org/1999/xhtml" lang="de">
+  <head>
+    <title>SASS-Workshop - mindmatters</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="stylesheets/style.css" media="screen, projection" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div id="container">
+      <div class="navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div id="header">
+        <img src="images/sass.png" />
+      </div>
+      <div id="main">
+        <div id="syntax">
+          <h2>Syntax in a nutshell</h2>
+          <p>
+            Lässt man bei CSS einfach die Semikolata und die geschweiften Klammern weg, dann erhält man valides Sass.
+          </p>
+          <h3>CSS</h3>
+          <pre><code>
+.divider {
+  border-bottom: 1px solid #DFDFD3;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+          </code></pre>
+          <h3>Sass</h3>
+          <pre><code>
+.divider
+  border-bottom: 1px solid #DFDFD3
+  margin-bottom: 10px
+  padding-bottom: 5px
+          </code></pre>
+          <p>
+            Sass erzeugt seine Kontexte/Blöcke ähnlich wie Python, indem es Einrückungen semantische Bedeutung gibt. Die Einrückung beträgt 2 Leerzeichen.
+          </p>
+          <p>
+            Alternativ kann man die Doppelpunkte auch vor die CSS-Eigenschaften schreiben:
+            <br />
+            <pre><code>
+.divider
+  :border-bottom 1px solid #DFDFD3
+  :margin-bottom 10px
+  :padding-bottom 5px
+            </code></pre>
+          </p>
+        </div>
+        <div id="variables">
+          <h2>Variablen</h2>
+          <p>Sass erlaubt die Verwendung von Variablen. Sie werden mit einem vorangestellten Ausrufezeichen geschrieben. Eine Definition sieht folgendermaßen aus:</p>
+          <pre><code>!basic_font_size = 12px</code></pre>
+          <p>Bei einer Zuweisung muss der Doppelpunkt durch ein Gleichheitszeichen ersetzt werden:</p>
+          <pre><code>body
+  font-size = !basic_font_size</code></pre>
+
+          <p>Hier zahlt sich jedoch die alternative Schreibweise mit den vorangestellten Doppelpunkte aus, denn man entdeckt ein fehlendes Gleichheitszeichen schneller, weshalb diese Schreibweise zu empfehlen ist:</p>
+
+          <pre><code>body
+  :font-size = !basic_font_size</code></pre>
+
+          <p>Dies sind alles valide Variablen:</p>
+
+          <pre><code>#ffeeff
+&quot;solid&quot;
+true
+12px
+20%
+</code></pre>
+          <p>Zahl-Variablen in Sass haben eine Einheit, wie in der Physik. Sass kann mit den Einheiten rechnen, was auch Umkonvertierungen der Einheit ermöglicht.</p>
+
+          <h3>Sass:</h3>
+          <pre><code>body
+  :font-size = !basic_font_size / 2
+  :line-height = (24px / !basic_font_size) + &quot;em&quot;</code></pre>
+          <h3>CSS:</h3>
+          <pre><code>body {
+  font-size: 6px;
+  line-height: 2em;
+}</code></pre>
+          <p>Variablen können an beliebiger Stelle ausgegeben werden, wenn man sie in <code>#{}</code> schreibt.</p>
+
+          <h3>Sass:</h3>
+          <pre><code>!span_size = 2
+  .span-#{!span_size}
+  :width = !span_size * 200px</code></pre>
+
+          <h3>CSS:</h3>
+          <pre><code>.span-2 {
+  width: 200px; }</code></pre>        </div>
+        <div id="nesting">
+          <h2>Nesting</h2>
+
+          <p>Mittels Nesting erlaubt es Sass, dass Deklarationen innerhalb eines bestimmten „Selektor-Scopes“ nicht ständig wiederholt werden müssen. Möchte man z.B. Elemente formatieren, die sich innerhalb von Elementen mit der Klasse <code>.feature-box</code> befinden, dann muss man diesen Scope nur ein einziges Mal angeben.</p>
+
+          <h3>Sass:</h3>
+
+          <pre><code>.feature-box
+  :padding 6px
+p
+  :line-height 16px
+h3
+  :background green</code></pre>
+
+          <h3>CSS:</h3>
+
+          <pre><code>.feature-box {
+  padding: 6px; }
+.feature-box p {
+  line-height: 16px; }
+.feature-box h3 {
+  background: green; }</code></pre>
+
+          <p>Mit dem Zeichen <code>&amp;</code> kann man explizit auf den aktuellen Scope zugreifen. Das braucht man immer dann, wenn man innenliegende Element nicht einfach per Leerzeichen konkatenieren möchte und mehr Einfluss braucht. Das eignet sich z.B. dann gut, wenn man die Formatierung innerhalb eines fremden Scopes ändern möchte, also z.B. das Aussehen einer Feature-Box inner halb der Seitenspalte. Der große Vorteil ist, dass man die Formatierungen kompakt unter dem Scope der Feature-Box zusammenhalten kann, so dass ihr Verhalten nicht in den Scopes definiert werden muss, in denen sie sich anders verhalten soll.</p>
+
+          <h3>Sass:</h3>
+          <pre><code>.feature-box
+:padding 6px
+p
+  :line-height 16px
+h3
+  :background green
+#side-col &amp;
+  :padding 12px</code></pre>
+
+          <h3>CSS:</h3>
+          <pre><code>.feature-box {
+  padding: 6px; }
+.feature-box p {
+  line-height: 16px; }
+.feature-box h3 {
+  background: green; }
+#side-col .feature-box {
+  padding: 12px; }</code></pre>
+        </div>
+      </div>
+      <div id="footer" class="navigation">
+        <ul>
+          <li><a href="#more-info">more information</a></li>
+          <li><a href="#imprint">imprint</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

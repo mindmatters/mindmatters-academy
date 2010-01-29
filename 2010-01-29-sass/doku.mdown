@@ -1,0 +1,322 @@
+Sass Basics
+===========
+
+Syntax in a nutshell
+--------------------
+
+Lässt man bei CSS einfach die Semikolata und die geschweiften Klammern weg, dann erhält man valides Sass.
+
+CSS
+
+    .divider {
+      border-bottom: 1px solid #DFDFD3;
+      margin-bottom: 10px;
+      padding-bottom: 5px;
+    }
+
+Sass
+
+    .divider
+      border-bottom: 1px solid #DFDFD3
+      margin-bottom: 10px
+      padding-bottom: 5px
+
+Sass erzeugt seine Kontexte/Blöcke ähnlich wie Python, indem es Einrückungen semantische Bedeutung gibt. Die Einrückung beträgt 2 Leerzeichen.
+
+Alternativ kann man die Doppelpunkte auch vor die CSS-Eigenschaften schreiben:
+
+    .divider
+      :border-bottom 1px solid #DFDFD3
+      :margin-bottom 10px
+      :padding-bottom 5px
+
+Variablen
+---------
+
+Sass erlaubt die Verwendung von Variablen. Sie werden mit einem vorangestellten Ausrufezeichen geschrieben. Eine Definition sieht folgendermaßen aus:
+
+    !basic_font_size = 12px
+
+Bei einer Zuweisung muss der Doppelpunkt durch ein Gleichheitszeichen ersetzt werden:
+
+    body
+      font-size = !basic_font_size
+
+Hier zahlt sich jedoch die alternative Schreibweise mit den vorangestellten Doppelpunkte aus, denn man entdeckt ein fehlendes Gleichheitszeichen schneller, weshalb diese Schreibweise zu empfehlen ist:
+
+    body
+      :font-size = !basic_font_size
+
+Dies sind alles valide Variablen:
+
+    #ffeeff
+    "solid"
+    true
+    12px
+    20%
+
+Zahl-Variablen in Sass haben eine Einheit, wie in der Physik. Sass kann mit den Einheiten rechnen, was auch Umkonvertierungen der Einheit ermöglicht.
+
+Sass:
+
+    body
+      :font-size = !basic_font_size / 2
+      :line-height = (24px / !basic_font_size) + "em"
+
+CSS:
+
+    body {
+      font-size: 6px;
+      line-height: 2em; }
+
+Variablen können an beliebiger Stelle ausgegeben werden, wenn man sie in `#{}` schreibt.
+
+Sass:
+
+    !span_size = 2
+    .span-#{!span_size}
+      :width = !span_size * 200px
+
+CSS:
+
+    .span-2 {
+      width: 200px; }
+
+Nesting
+-------
+
+Mittels Nesting erlaubt es Sass, dass Deklarationen innerhalb eines bestimmten „Selektor-Scopes“ nicht ständig wiederholt werden müssen. Möchte man z.B. Elemente formatieren, die sich innerhalb von Elementen mit der Klasse `.feature-box` befinden, dann muss man diesen Scope nur ein einziges Mal angeben.
+
+Sass:
+
+    .feature-box
+      :padding 6px
+      p
+        :line-height 16px
+      h3
+        :background green
+
+CSS:
+
+    .feature-box {
+      padding: 6px; }
+    .feature-box p {
+      line-height: 16px; }
+    .feature-box h3 {
+      background: green; }
+
+Mit dem Zeichen `&` kann man explizit auf den aktuellen Scope zugreifen. Das braucht man immer dann, wenn man innenliegende Element nicht einfach per Leerzeichen konkatenieren möchte und mehr Einfluss braucht. Das eignet sich z.B. dann gut, wenn man die Formatierung innerhalb eines fremden Scopes ändern möchte, also z.B. das Aussehen einer Feature-Box inner halb der Seitenspalte. Der große Vorteil ist, dass man die Formatierungen kompakt unter dem Scope der Feature-Box zusammenhalten kann, so dass ihr Verhalten nicht in den Scopes definiert werden muss, in denen sie sich anders verhalten soll.
+
+Sass:
+
+    .feature-box
+      :padding 6px
+      p
+        :line-height 16px
+      h3
+        :background green
+      #side-col &
+        :padding 12px
+
+CSS:
+
+    .feature-box {
+      padding: 6px; }
+    .feature-box p {
+      line-height: 16px; }
+    .feature-box h3 {
+      background: green; }
+    #side-col .feature-box {
+      padding: 12px; }
+
+Mixins
+------
+
+Mixins sind das mächtigste Werkzeug in Sass. Einfach ausgedrückt kann man sie sich wie CSS-Klassen vorstellen, die aber nur innerhalb von CSS selbst benutzt werden können. Man definiert wie bei einer CSS-Klasse eine Menge von Eigenschaften, die man dann zu einem oder mehreren Selektoren mixen kann. Anders als Variablen lassen sich nicht nur einzelne Werte, sondern ganze Eigenschaftsbäume in einen Selektor hängen.
+
+Dieses Beispiel hier zeigt, wie man sich beispielweise ein Mixin bauen kann, um den Text auf ein Standardaussehen festlegen zu können. Es ändert die Basis-Texteigenschaften - und zusätzlich die von Links innerhalb des Kontextes/Selektors, in den das Mixin eingebunden wird. Definiert werden Mixins mit einem vorangestellten Gleichheitszeichen, setzt man sie ein, dann stellt man ihnen ein Pluszeichen voran.
+
+Sass:
+
+    =basic-font
+      :font
+        :family "Arial", "sans-serif"
+        :size 12px
+        :weight "normal"
+      :line-height 20px
+      :color #ccc
+      a
+        :color #ff0000
+
+    h1
+      +basic-font
+
+CSS:
+
+    h1 {
+      font-family: "Arial", "sans-serif";
+      font-size: 12px;
+      font-weight: "normal";
+      line-height: 20px;
+      color: #ccc; }
+    h1 a {
+      color: #ff0000; }
+
+Der große Vorteil von Mixins ist die Abstraktionsschicht, die nicht bis ins CSS hinaus kommuniziert wird, da sie vor dem Rendern ins CSS übersetzt wird. Durch vorteilhafte Namensgebung muss man als Endanwender nur wissen, dass man das Mixin `basic-font` benutzen muss, um das Aussehen eines Textes zu resetten. Statt Kommentare kann also komplexe Konstrukte hinter einem semantisch bedeutsamen Namen verstecken. Interessiert man sich für die Funktionsweise, dann kann man sich einfach die Definition des Mixins ansehen.
+
+Ein Nachteil von Mixins ist natürlich, dass sie ihre Deklarationen bei jedem Einsatz ins CSS emittieren und somit das resultierende CSS eventuell größer als unbedingt nötig machen. Hier gilt aber auch, wie immer beim Einsatz von Sass, dass die mächtigeren Mittel den Entwickler nicht davon entbinden, sie bewußt und wohlüberlegt einzusetzen. Als Richtlinie: Mixins sollte man dann einsetzen, wenn den CSS-Code und seine Intentionen klarer und deutlicher machen und den Overhead rechtfertigen. Das sollte aber meistens der Fall sein.
+
+Datei-Organisation
+------------------
+
+Möchte man seine Stildefinitionen in mehrere sinnvolle Dateien aufteilen, dann kann man dafür die `@import`-Deklaration nutzen. Im Gegensatz zu CSS, wo ein `@import` jedesmal zu einem neuen HTTP-Request führt, was aus Performance-Sicht ungünstig ist, inkludiert Sass die referenzierten Dateien tatsächlich ein. Dateien, die dafür gedacht sind, eingebunden zu werden, sollte man mit einem vorangestellten Unterstrich benennen. Sass erkennt dann, dass diese Dateien nicht ein ein entsprechendes Gegenstück kompiliert werden müssen.
+
+Sass
+
+    @import typography
+
+Diese Deklaration inkludiert die Datei `_typography.sass` in die Datei, in der die `@import`-Deklaration steht.
+
+Sass benutzen
+-------------
+
+### Installation
+
+Sass ist Teil der Haml-Bibliothek, kann also nicht separat installiert werden. Die einzige mir bekannte Implementierung ist in Ruby geschrieben.
+
+Haml lässt sich bequem als Rubygem-Packet installieren:
+
+    sudo gem install haml
+
+### Sass => CSS
+
+Dies übernimmt das von Haml installierte Kommandozeilenprogamm `sass`:
+
+    sass style.sass style.css
+
+### CSS => Sass
+
+Die Rückkonvertierung mit dem Programm `css2sass` funktioniert nicht immer fehlerfrei und erspart nicht die manuelle Kontrolle, nimmt aber viel Arbeit ab:
+
+    css2sass style.css style.sass
+
+### Automatische Konvertierung und Einsatz in beliebigen Projekten
+
+Beim Entwickeln stört es, wenn man nach jeder Änderung in den Sass-Dateien eine neue Konvertierung starten muss. Das Compass-Framework, ein in Sass geschriebenes CSS-Framework, bringt ein Kommandozeilenprogramm mit, welches das Dateisystem auf Änderungen überwachen und eine Neukonvertierung automatisch anstoßen kann.
+
+Dazu muss zunächst Compass installiert werden:
+
+    sudo gem install compass
+
+Dies installiert unter anderem auch das Kommandozeilenprogramm `compass` mit dem man sich z.B. ganz einfach ein neues Sass-Projekt erzeugen kann. Für den Anfang reicht ein einfaches leeres Compass-Projekt, für das man nur den Zielordner angeben muss:
+
+    compass my_sass_project
+
+Dies erzeugt ein Verzeichnis namens `src` (für die Sass-Dateien) und eines namens `stylesheets` (für die kompilierten CSS-Dateien). Wem das nicht gefällt, der kann die Verzeichnisorte für Sass- und CSS-Dateien in der Datei `config.rb` ändern, die gleich mit angelegt wird.
+
+Man kann jetzt in sein Sass-Projektverzeichnis wechseln und die Option `--watch` benutzen um CSS-Konvertierungen bei Dateiänderungen on-the-fly zu starten:
+
+    cd my_sass_project
+    compass --watch
+
+Noch mehr Informationen zum `compass`-Kommandozeilenprogramm gibt es hier: [http://wiki.github.com/chriseppstein/compass/command-line-tool][compass-tool]
+
+Projekt-Organisation
+--------------------
+
+Die Schwierigkeit im Umgang mit Sass besteht weniger in der konkreten Anwendung, als in der Organisation eines Sass-Projektes. Hier sind auch wir noch stark am Experimentieren und ständig auf der Suche nach möglichen Verbesserungen unserer aktuellen Vorgehensweise.
+
+Ein toller Einstieg in das Thema, von dem wir uns auch haben inspirieren lassen, ist der Blog-Artikel von Chris Eppstein, dem Autor des Compass-Frameworks: [http://chriseppstein.github.com/blog/2009/09/25/separating-style-concerns/][eppstein-on-organisation]
+
+Unsere am weitesten entwickelte und erprobte Struktur sieht folgendermaßen aus:
+
+    config.rb
+    +-src/
+    | +-_lib.sass
+    | +-screen.sass
+    | +-lib/
+    | | +-_forms.sass
+    | | +-_layout.sass
+    | | +-_positioning.sass
+    | | +-_typography.sass
+    | | +-_utils.sass
+    | +-screen/
+    |   +-_forms.sass
+    |   +-_layout.sass
+    |   +-_positioning.sass
+    |   +-_typography.sass
+    |   +-a_special_page/
+    |   | +-_styles_for_a_special_page.sass
+    |   +-shared/
+    |     +-_shared_styles_for_several_pages.sass
+    +-stylesheets/
+      +-screen.css
+
+### `screen.sass`
+
+Dies ist die einzige Datei ohne führenden Unterstrich, also auch die einzige Datei, aus der ein CSS-Gegenstück gerendert wird. Sie komponiert ihren Inhalt aus den einzelnen Sass-Dateien des Projektes und hat ungefähr folgenden Inhalt:
+
+    // ------------------- //
+    // Default Look & Feel //
+    // ------------------- //
+
+    @import screen/typography
+    @import screen/forms
+
+    // -------------------- //
+    // Layout & Positioning //
+    // -------------------- //
+
+    @import screen/positioning
+    @import screen/layout
+
+    // ------------------------------- //
+    // Widgets, Modules and Components //
+    // ------------------------------- //
+
+    @import screen/shared/_shared_styles_for_several_pages
+
+    // -------------------- //
+    // Page Specific Styles //
+    // -------------------- //
+
+    @import screen/a_special_page/_styles_for_a_special_page
+
+Die einzelnen Blöcke/Dateien haben dabei folgende Aufgaben:
+
+#### Default Look & Feel
+
+Der Browser hat für alle HTML-Elemente einen Standard-Look parat. Diese sind ja meistens nicht hübsch, also definieren wir hier unsere eigenen Standard-Looks für alle HTML-Elemente, die wir im Projekt verwenden.
+
+#### Layout & Positioning
+
+Die Datei `screen/_positioning.sass` definiert das Grid, kümmert sich also darum, wie die Seite grob aufgeteilt ist und wo Elemente grob zu liegen kommen können.
+
+In `screen/_layout.sass` werde Stile für Dinge abgelegt, die auf jeder Seite sichtbar sind (also z.B. Stile für den Header, den Footer, für Flash-Messages, …).
+
+#### Widgets, Modules and Components
+
+Diese Sektion ist etwas freier gehalten und hier sollen Dinge zu liegen kommen, die potentiell auf jeder Seite auftauchen könnten, es aber nicht müssen und die eine funktionale Einheit bilden. Also alles aus dem `shared`-Verzeichnis und das können Dinge sein wie Boxen oder Button-Stile.
+
+#### Page Specific Styles
+
+Zuletzt werden Stile eingebunden, die seitenspezifisch sind, also Stile für HTML-Konstrukte, die so nur auf einer ganz speziellen Seite vorkommen. Hier kann man natürlich nur sehr schwer ein Beispiel angeben, da sich gerade diese Stile sehr von Projekt zu Projekt unterscheiden werden.
+
+### `_lib.sass`
+
+Dies ist die zweitwichtigste Datei, denn sie inkludiert alles aus dem `lib`-Verzeichnis.
+
+    @import lib/utils
+    @import lib/typography
+    @import lib/forms
+    @import lib/positioning
+    @import lib/layout
+
+In diesem Verzeichnis sollten alle Definition von Variablen und Mixins zu liegen kommen, jedoch sollten diese Dateien auf keinen Fall Stile ausgeben, nur definieren! Dies hat den Hintergrund, dass man nur die `_lib.sass` inkludieren muss, um alle globalen Variablen und Mixins zur Verfügung zu haben. Der Variablen-Scope von Sass-Variablen funktioniert ähnlich wie in JavaScript, so dass man es nicht vermeiden kann globale Variablen bzw. Mixins zu benutzen, um vernünftig damit arbeiten zu können.
+
+Gibt es zu einer Datei aus dem `screen`-Verzeichnis Variablen- oder Mixin-Definitionen, so sollten sie in ihr Gegenstück aus dem `lib`-Verzeichnis eingetragen werden. Zusätzlich gibt es noch die `_utils.sass`-Datei, in die man allgemeine Helfer, die man in jedem Projekt gebrauchen kann, eintragen kann.
+
+Wir hoffen, dass sich mit Hilfe dieses `lib`-Verzeichnisses mit der Zeit aus verschiedenen Projekten Mixins und Konfigurationen herauskristallisieren, die man so oder so ähnlich in jedem Projekt gebrauchen kann und die man als Basis-Paket in jedes Projekt inkludieren kann, um Arbeit zu sparen.
+
+[compass-tool]:             http://wiki.github.com/chriseppstein/compass/command-line-tool
+[eppstein-on-organisation]: http://chriseppstein.github.com/blog/2009/09/25/separating-style-concerns/

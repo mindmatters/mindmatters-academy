@@ -1,0 +1,31 @@
+#container {
+  width: 926px;
+  margin: 0px auto; }
+
+.navigation {
+  background: #C0C0C0; }
+  .navigation ul {
+    padding-left: 0px; }
+  .navigation li {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-right: 1px solid #FFFFFF; }
+    .navigation li a {
+      color: #645e5a;
+      text-decoration: none;
+      font-family: arial; }
+
+#syntax {
+  width: 308.667px;
+  display: inline-block; }
+
+#variables {
+  width: 308.667px;
+  display: inline-block; }
+
+#nesting {
+  width: 308.667px;
+  display: inline-block; }

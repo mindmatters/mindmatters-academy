@@ -1,0 +1,90 @@
+!grid_max_columns = 18
+!grid_width       = 42px
+!grid_margin      = 10px
+
+!basic_font           = "Helvetica"
+!basic_font_size      = 12px
+!navigation_link_size = 14px
+
+!basic_color      = #222
+!basic_link_color = #666
+!column_color     = #ccc
+
+=float-left
+  :float left
+  :display inline
+
+=float-right
+  :float right
+  :display inline
+
+=clear-fix
+  :overflow hidden
+
+=reset-box-model
+  :margin 0
+  :padding 0
+
+=column(!count=1, !last=false)
+  +float-left
+  +clear-fix
+  :width = (!grid_width * !count) + (!grid_margin * (!count - 1))
+  @if !last
+    :margin-right 0
+  @if !last == false
+    :margin-right = !grid_margin
+
+h2, h3, pre
+  :padding 0px 10px
+p
+  :padding 10px
+  img
+    +float-left
+    :margin 5px
+    :border 1px solid black
+
+body
+  :font-family = !basic_font
+  :color = !basic_color
+  :font-size = !basic_font_size
+  a
+    :color = !basic_link_color
+    :text-decoration none
+
+#container
+  +clear-fix
+  :width = !grid_max_columns * (!grid_width + !grid_margin) - !grid_margin
+  :margin 0px auto
+
+#header, #main, #footer
+  +column(18, true)
+  :margin-bottom = !grid_margin
+
+#syntax, #variables
+  +column(6)
+
+#nesting
+  +column(6, true)
+
+#syntax, #variables, #nesting
+  :background = !column_color
+
+.navigation
+  :margin-bottom = !grid_margin
+  ul
+    +reset-box-model
+    +clear-fix
+    :list-style none
+    :background #ccc
+  li
+    +float-left
+    :display block
+    a
+      :display block
+      :padding 15px
+      :border-right 1px solid #ddd
+      :font-size = !navigation_link_size
+      &:hover
+        :background #eee
+    &:last-child a
+      :border-right none

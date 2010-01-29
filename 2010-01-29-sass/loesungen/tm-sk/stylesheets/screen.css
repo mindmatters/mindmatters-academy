@@ -1,0 +1,41 @@
+/* ** fontz ** */
+/* **** */
+body {
+  margin: 0px;
+  padding: 0px; }
+
+#container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 950px; }
+
+.navigation {
+  background: #ccc;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+  .navigation ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; }
+    .navigation ul li {
+      float: left;
+      padding-left: 10px;
+      padding-right: 10px;
+      border-right: 1px solid #535358;
+      list-style: none; }
+      .navigation ul li a {
+        height: 46px;
+        line-height: 46px;
+        text-decoration: none;
+        color: #535358; }
+
+#main {
+  overflow: hidden; }
+  #main #syntax, #main #variables, #main #nesting {
+    float: left;
+    width: 310px;
+    background: #ccc; }
+  #main #variables {
+    margin-right: 10px;
+    margin-left: 10px; }

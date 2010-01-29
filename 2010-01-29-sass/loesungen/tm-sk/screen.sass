@@ -1,0 +1,55 @@
+/*** fontz ***/
+!standard_font_size = 12px
+!navigation_font_size = 14px
+
+/******/
+!navigation_height = 46px
+!column_margin = 10px
+!page_width = 950px
+
+body
+  :margin 0px
+  :padding 0px
+
+#container
+  :margin
+    :left auto
+    :right auto
+  :width = !page_width
+
+.navigation
+  :background #ccc
+  :font-size = !navigation_font_size
+  :margin
+    :top 10px
+    :bottom 10px
+  ul
+    :margin 0
+    :padding 0
+    :overflow hidden
+    li
+      :float left
+      :padding
+        :left 10px
+        :right 10px
+      :border-right 1px solid #535358
+      :list-style none
+      a
+        :height = !navigation_height
+        :line-height = !navigation_height      
+        :text-decoration none
+        :color #535358
+
+
+#main
+  :overflow hidden
+
+  #syntax, #variables, #nesting
+    :float left
+    :width = (!page_width - 2 * !column_margin) / 3
+    :background #ccc
+
+  #variables
+    :margin 
+      :right = !column_margin
+      :left = !column_margin

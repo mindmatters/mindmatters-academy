@@ -1,0 +1,70 @@
+h2, h3, pre {
+  padding: 0px 10px; }
+
+p {
+  padding: 10px; }
+  p img {
+    float: left;
+    display: inline;
+    margin: 5px;
+    border: 1px solid black; }
+
+body {
+  font-family: Helvetica;
+  color: #222222;
+  font-size: 12px; }
+  body a {
+    color: #666666;
+    text-decoration: none; }
+
+#container {
+  overflow: hidden;
+  width: 926px;
+  margin: 0px auto; }
+
+#header, #main, #footer {
+  float: left;
+  display: inline;
+  overflow: hidden;
+  width: 926px;
+  margin-right: 0;
+  margin-bottom: 10px; }
+
+#syntax, #variables {
+  float: left;
+  display: inline;
+  overflow: hidden;
+  width: 302px;
+  margin-right: 10px; }
+
+#nesting {
+  float: left;
+  display: inline;
+  overflow: hidden;
+  width: 302px;
+  margin-right: 0; }
+
+#syntax, #variables, #nesting {
+  background: #cccccc; }
+
+.navigation {
+  margin-bottom: 10px; }
+  .navigation ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style: none;
+    background: #ccc; }
+  .navigation li {
+    float: left;
+    display: inline;
+    display: block; }
+    .navigation li a {
+      display: block;
+      padding: 15px;
+      border-right: 1px solid #ddd;
+      font-size: 14px; }
+      .navigation li a:hover {
+        background: #eee; }
+    .navigation li:last-child a {
+      border-right: none; }

@@ -1,0 +1,11 @@
+breite gesamt: 926px
+eine spalte: 302px + 10px margin-right
+
+font-größen:
+12px
+14px
+
+Farben
+#222
+#666
+#ccc

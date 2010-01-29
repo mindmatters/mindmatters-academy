@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  padding: 10px;
+  align: center;
+  font-family: "Helvetica", "Arial", "sans-serif";
+  font-size: 12px; }
+
+#container {
+  width: 926px;
+  margin: auto; }
+  #container .navigation, #container #header, #container #main {
+    margin-bottom: 10px; }
+
+#header {
+  overflow: hidden; }
+
+.navigation {
+  background-color: #cccccc;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  font-size: 14px; }
+  .navigation ul {
+    list-style-type: none; }
+    .navigation ul li {
+      float: left;
+      padding: 10px;
+      border-left: 1px solid white; }
+      .navigation ul li a {
+        color: #666;
+        text-decoration: none; }
+
+#main {
+  overflow: hidden; }
+  #main #syntax, #main #variables, #main #nesting {
+    width: 272px;
+    margin-right: 10px;
+    float: left;
+    background-color: #cccccc;
+    padding: 15px; }
+    #main #syntax h2, #main #variables h2, #main #nesting h2 {
+      padding-bottom: 15px; }
+    #main #syntax h3, #main #syntax pre, #main #syntax p, #main #variables h3, #main #variables pre, #main #variables p, #main #nesting h3, #main #nesting pre, #main #nesting p {
+      padding: 15px 0; }
+  #main #nesting {
+    margin-right: 0; }
