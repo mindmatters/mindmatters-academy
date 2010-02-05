@@ -1,5 +1,20 @@
-Weitere Vortragsplanung
-=======================
+Grobplanung
+===========
+
+Der Februar wird im Zeichen von CSS stehen. Folgende Mentor-Gruppen wurden gebildet:
+
+- Christoph/Christopher
+- Tobi/Dariusch
+- E-Sven/Oliver
+- Benni/Virginio
+
+Nach Absprache, da nicht anwesend:
+
+- Rock-Sven/Timo
+- Jan/Andi
+
+Vortragsplanung
+===============
 
 Freitag 12.02.2010: Virginio & Dariusch
 ---------------------------------------
@@ -8,20 +23,32 @@ Freitag 12.02.2010: Virginio & Dariusch
 - Vorstellung der verschiedenen Selektoren und  deren Semantik
 - Vorstellung des Box-Models
 
-**********************
-
-Freitag 19.02.2010: RockSven & ???
-----------------------------------
+Freitag 19.02.2010: Rock-Sven & Jan
+-----------------------------------
 
 - Positionierung
 - Floating
 - Layout
 
-**********************
+Inkl. kleinem Gast-Auftritt von VJ Wowo101 zum Thema „Grid-based Layouts“.
+
+Freitag 26.02.2010: Screencast Public Viewing
+---------------------------------------------
 
 - Grid
 - Compass
 
-**********************
+An diesem Termin sind einige beim Coworking-Hackday oder haben Urlaub.
+Wir haben uns deshalb überlegt, dass wir einen Screencast anschauen.
+
+Vorschlag:
+[Einführung in Compass von Chris Eppstein][1]
+
+Weitere Vorschläge sind willkommen!
+
+Sonstige vorgeschlagene Themen
+==============================
 
 - `em` vs. `px`
+
+[1]: http://wiki.github.com/chriseppstein/compass/
