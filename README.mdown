@@ -1,0 +1,5 @@
+Schaut euch die Planung der anstehenden Vorträge bitte am besten hier auf Github im Markdown-Format an, weil dieses dann auch
+gleich in gut lesbarer Form gerendert wird:
+[http://github.com/mindmatters/mindmatters-academy/blob/master/planung.mdown][1]
+
+[1]: http://github.com/mindmatters/mindmatters-academy/blob/master/planung.mdown
