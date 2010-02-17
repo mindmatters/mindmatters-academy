@@ -49,6 +49,9 @@ Weitere Vorschläge sind willkommen!
 Sonstige vorgeschlagene Themen
 ==============================
 
-- `em` vs. `px`
+- `em` vs. `px`  <br/><br/>
+Hierzu habe ich einen [hervorragenden aktuellen Artikel von Gerrit van Aaken][2] gefunden, der mir aus der Seele spricht und der das
+Thema meiner Meinung nach erschöpfend diskutiert.
 
 [1]: http://wiki.github.com/chriseppstein/compass/
+[2]: http://praegnanz.de/weblog/warum-ich-pixel-fuer-css-schriftgrade-verwende
