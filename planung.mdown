@@ -1,18 +1,3 @@
-Grobplanung
-===========
-
-Der Februar wird im Zeichen von CSS stehen. Folgende Mentor-Gruppen wurden gebildet:
-
-- Christoph/Christopher
-- Tobi/Dariusch
-- E-Sven/Oliver
-- Benni/Virginio
-
-Nach Absprache, da nicht anwesend:
-
-- Rock-Sven/Timo
-- Jan/Andi
-
 Vortragsplanung
 ===============
 
@@ -20,7 +5,7 @@ Freitag 12.02.2010: Virginio & Dariusch
 ---------------------------------------
 
 - Spezifizität von Selektoren
-- Vorstellung der verschiedenen Selektoren und  deren Semantik
+- Vorstellung der verschiedenen Selektoren und deren Semantik
 - Vorstellung des Box-Models
 
 Freitag 19.02.2010: Rock-Sven & Jan
@@ -92,14 +77,27 @@ der Videos, die wir erstellt haben. Vor allem geht es auch um die konkreten Erfa
 der Durchführung des Tests und die Weitergabe von Problemen und Vorschläge für deren Lösungen.
 Zusätzlich schauen wir uns die Tipps von Carolyn Snyder zu diesem Thema an.
 
-Übungsthema: Noch offen
+Freitag, 30.04.2010: Vom Papierprototypen zur HTML-Umsetzung
+------------------------------------------------------------
 
-Sonstige vorgeschlagene Themen
-==============================
+So beschreibt Andy Clarke seinen Frontendprozess:
 
-- `em` vs. `px`  <br/><br/>
-Hierzu habe ich einen [hervorragenden aktuellen Artikel von Gerrit van Aaken][2] gefunden, der mir aus der Seele spricht und der das
-Thema meiner Meinung nach erschöpfend diskutiert.
+> My process: Think, sketch, write HTML. Open browser, write CSS. Layout, type, colour. Open Fireworks, add images, take away, put some back.
+
+Die Schritte „Think“ und „Sketch“ haben wir bisher gut erörtert, somit steht nun „write HTML“ an.
+Wer genau aufpasst, der stellt fest, dass der Schritt „Open browser“ erst als nächster Schritt nach dem Erstellen des
+HTML auftaucht. Wir wollen uns also folglich damit beschäftigen, wie man den wichtigen Schritt des
+semantischen Auszeichnens mittels HTML richtig angeht und anschließend erörtern, warum das wichtig und
+vorteilhaft ist. Wir stellen exotische und vielleicht unbekanntere HTML-Elemente vor, erklären, um was es sich
+bei Mikro-Formaten handeln und geben Tipps, wie man HTML5 schon heute einsetzen kann.
+
+Die Übung liegt auf der Hand: Anhand von Wireframes aus unserem Übungsprojekt erstellen und diskutieren
+wir HTML5-Dokumente.
+
+Freitag, 14.05.2010: Gastvortrag
+--------------------------------
+
+Details hierzu folgen wenn bekannt.
+
 
 [1]: http://wiki.github.com/chriseppstein/compass/
-[2]: http://praegnanz.de/weblog/warum-ich-pixel-fuer-css-schriftgrade-verwende

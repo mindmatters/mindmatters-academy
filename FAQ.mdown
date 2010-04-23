@@ -1,0 +1,12 @@
+FAQ
+===
+
+Hier möchte ich alles Themen sammeln, die zu klein sind, um ihnen einen kompletten zu widmen und die mit einem Link,
+Screencast, Knowledgebase-Artikel oder etwas Ähnlichem ausführlich und endgültig beantwortet werden können.
+
+`em` vs. `px`
+-------------
+
+Hierzu habe ich einen [hervorragenden aktuellen Artikel von Gerrit van Aaken][pixel-fuer-schriftgrade] gefunden, der mir aus der Seele spricht und der das Thema meiner Meinung nach erschöpfend diskutiert.
+
+[pixel-fuer-schriftgrade]: http://praegnanz.de/weblog/warum-ich-pixel-fuer-css-schriftgrade-verwende

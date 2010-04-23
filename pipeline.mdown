@@ -1,0 +1,17 @@
+Themen-Pipeline
+===============
+
+Hier sammeln wir alles, für was wir noch keinen Termin haben, was aber unbedingt einmal vorgetragen
+werden soll.
+
+Command Line: Advanced Tools and Concepts
+-----------------------------------------
+
+Virginio beschäftigt sich momentan mit diesem Thema und bereitet einen abschließenden Vortrag vor, in dem
+er seine Ergebnisse mit uns teilt.
+
+Rails Deployment
+----------------
+
+Rock-Sven hat angeregt, dass er uns in einem Vortrag zeigt, wie ein typisches Rails-Deployment bei uns
+aussieht und welche Tools und Konzepte man kennen und beherrschen sollte.
