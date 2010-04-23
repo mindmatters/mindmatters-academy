@@ -9,7 +9,7 @@ Details hierzu folgen wenn bekannt.
 Freitag, 30.04.2010: Vom Papierprototypen zur HTML-Umsetzung
 ------------------------------------------------------------
 
-So beschreibt Andy Clarke seinen Frontendprozess:
+So [beschreibt][andy-clarkes-process] Andy Clarke seinen Frontendprozess:
 
 > My process: Think, sketch, write HTML. Open browser, write CSS. Layout, type, colour. Open Fireworks, add images, take away, put some back.
 
@@ -101,3 +101,4 @@ Freitag 12.02.2010: Virginio & Dariusch
 
 
 [1]: http://wiki.github.com/chriseppstein/compass/
+[andy-clarkes-process]: http://twitter.com/Malarkey/status/4057082247

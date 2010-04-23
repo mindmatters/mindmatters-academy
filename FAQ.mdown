@@ -1,7 +1,7 @@
 FAQ
 ===
 
-Hier möchte ich alles Themen sammeln, die zu klein sind, um ihnen einen kompletten zu widmen und die mit einem Link,
+Hier möchte ich alles Themen sammeln, die zu klein sind, um ihnen einen kompletten Vortrag zu widmen und die mit einem Link,
 Screencast, Knowledgebase-Artikel oder etwas Ähnlichem ausführlich und endgültig beantwortet werden können.
 
 `em` vs. `px`
