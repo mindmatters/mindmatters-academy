@@ -1,81 +1,10 @@
 Vortragsplanung
 ===============
 
-Freitag 12.02.2010: Virginio & Dariusch
----------------------------------------
+Freitag, 14.05.2010: Gastvortrag
+--------------------------------
 
-- Spezifizität von Selektoren
-- Vorstellung der verschiedenen Selektoren und deren Semantik
-- Vorstellung des Box-Models
-
-Freitag 19.02.2010: Rock-Sven & Jan
------------------------------------
-
-- Positionierung
-- Floating
-- Layout
-
-Inkl. kleinem Gast-Auftritt von VJ Wowo101 zum Thema „Grid-based Layouts“.
-
-Freitag 26.02.2010: Screencast Public Viewing
----------------------------------------------
-
-- Grid
-- Compass
-
-An diesem Termin sind einige beim Coworking-Hackday oder haben Urlaub.
-Wir haben uns deshalb überlegt, dass wir einen Screencast anschauen.
-
-Vorschlag:
-[Einführung in Compass von Chris Eppstein][1]
-
-Weitere Vorschläge sind willkommen!
-
-Freitag, 12.03.2010: Softwareentwicklung, Design und Stories
-------------------------------------------------------------
-
-Wir beleuchten unseren agilen Entwicklungsprozess und insbesondere das Problem, wie
-der Design-Prozess integriert werden kann, der historisch bedingt anders strukturiert
-ist. Wir unterhalten uns darüber, welche Rolle die Vision eines Projektes einnimmt und wie
-sie dazu dienen kann Epics und Stories daraus abzuleiten.
-
-Als Übung überlegen wir uns ein kleines Software-Projekt und versuchen zu üben, die
-Sicht eines Product-Owners einzunehmen, indem wir eine möglichst klare Vision dafür zu
-formulieren und daraus dann Epics abzuleiten.
-
-Freitag, 19.03.2010: Wiederholung „Visionen“ und Epics
-------------------------------------------------------
-
-Wiederholung des Themas der letzten Woche (Freiwillige machen Powerpoint-Karaoke) und weitere
-Ausarbeitung der Vision und der Epics.
-
-Freitag, 26.03.2010: Stories, Scribbles, Prototypen
----------------------------------------------------
-
-Stories rein textlich zu beschreiben führt nicht immer zu der Detailtiefe, die gebraucht wird,
-um eine Story in allen Interaktionsfragen ausreichend beschreiben zu können. Hierzu eignen
-sich visuelle Methoden besser. Wir wollen besprechen, welche unterschiedlichen Varianten es
-dafür gibt und wo im Prozess sie sich am besten eignen.
-
-In der Übung werden wir für die in der vorangegangenen Session erstellten Epics Stories erstellen
-und aus diesen dann Scribbles erstellen, um die erste grobe Idee ihrer Interaktion festzuhalten.
-
-Freitag, 16.04.2010: Papierprototypen
--------------------------------------
-
-Wir wollen uns dem uns neuen Thema des „Paper Prototyping“ widmen und probieren das nach einer
-kurzen Einführung ins Thema gleich selber aus, indem wir uns aus den Stories der vorangegangenen
-Woche die interaktionslastigsten aussuchen und versuchen, für diese einen Papierprototypen des
-Interaktionskonzepts zu erstellen. Wir überprüfen den Prototypen anhand eines wechselseitigen
-Usability-Tests mit den anderen Gruppenmitgliedern.
-
-Freitag, 23.04.2010: Durchführen eines Usability-Tests mit Papierprototypen
----------------------------------------------------------------------------
-
-Zunächst einmal wollen wir die Ergebnisse der letzten Woche diskutieren (z.B. auch anhand)
-der Videos, die wir erstellt haben. Vor allem geht es auch um die konkreten Erfahrungen bei
-der Durchführung des Tests und die Weitergabe von Problemen und Vorschläge für deren Lösungen.
-Zusätzlich schauen wir uns die Tipps von Carolyn Snyder zu diesem Thema an.
+Details hierzu folgen wenn bekannt.
 
 Freitag, 30.04.2010: Vom Papierprototypen zur HTML-Umsetzung
 ------------------------------------------------------------
@@ -94,10 +23,81 @@ bei Mikro-Formaten handeln und geben Tipps, wie man HTML5 schon heute einsetzen 
 Die Übung liegt auf der Hand: Anhand von Wireframes aus unserem Übungsprojekt erstellen und diskutieren
 wir HTML5-Dokumente.
 
-Freitag, 14.05.2010: Gastvortrag
---------------------------------
+Freitag, 23.04.2010: Durchführen eines Usability-Tests mit Papierprototypen
+---------------------------------------------------------------------------
 
-Details hierzu folgen wenn bekannt.
+Zunächst einmal wollen wir die Ergebnisse der letzten Woche diskutieren (z.B. auch anhand)
+der Videos, die wir erstellt haben. Vor allem geht es auch um die konkreten Erfahrungen bei
+der Durchführung des Tests und die Weitergabe von Problemen und Vorschläge für deren Lösungen.
+Zusätzlich schauen wir uns die Tipps von Carolyn Snyder zu diesem Thema an.
+
+Freitag, 16.04.2010: Papierprototypen
+-------------------------------------
+
+Wir wollen uns dem uns neuen Thema des „Paper Prototyping“ widmen und probieren das nach einer
+kurzen Einführung ins Thema gleich selber aus, indem wir uns aus den Stories der vorangegangenen
+Woche die interaktionslastigsten aussuchen und versuchen, für diese einen Papierprototypen des
+Interaktionskonzepts zu erstellen. Wir überprüfen den Prototypen anhand eines wechselseitigen
+Usability-Tests mit den anderen Gruppenmitgliedern.
+
+Freitag, 26.03.2010: Stories, Scribbles, Prototypen
+---------------------------------------------------
+
+Stories rein textlich zu beschreiben führt nicht immer zu der Detailtiefe, die gebraucht wird,
+um eine Story in allen Interaktionsfragen ausreichend beschreiben zu können. Hierzu eignen
+sich visuelle Methoden besser. Wir wollen besprechen, welche unterschiedlichen Varianten es
+dafür gibt und wo im Prozess sie sich am besten eignen.
+
+In der Übung werden wir für die in der vorangegangenen Session erstellten Epics Stories erstellen
+und aus diesen dann Scribbles erstellen, um die erste grobe Idee ihrer Interaktion festzuhalten.
+
+Freitag, 19.03.2010: Wiederholung „Visionen“ und Epics
+------------------------------------------------------
+
+Wiederholung des Themas der letzten Woche (Freiwillige machen Powerpoint-Karaoke) und weitere
+Ausarbeitung der Vision und der Epics.
+
+Freitag, 12.03.2010: Softwareentwicklung, Design und Stories
+------------------------------------------------------------
+
+Wir beleuchten unseren agilen Entwicklungsprozess und insbesondere das Problem, wie
+der Design-Prozess integriert werden kann, der historisch bedingt anders strukturiert
+ist. Wir unterhalten uns darüber, welche Rolle die Vision eines Projektes einnimmt und wie
+sie dazu dienen kann Epics und Stories daraus abzuleiten.
+
+Als Übung überlegen wir uns ein kleines Software-Projekt und versuchen zu üben, die
+Sicht eines Product-Owners einzunehmen, indem wir eine möglichst klare Vision dafür zu
+formulieren und daraus dann Epics abzuleiten.
+
+Freitag 26.02.2010: Screencast Public Viewing
+---------------------------------------------
+
+- Grid
+- Compass
+
+An diesem Termin sind einige beim Coworking-Hackday oder haben Urlaub.
+Wir haben uns deshalb überlegt, dass wir einen Screencast anschauen.
+
+Vorschlag:
+[Einführung in Compass von Chris Eppstein][1]
+
+Weitere Vorschläge sind willkommen!
+
+Freitag 19.02.2010: Rock-Sven & Jan
+-----------------------------------
+
+- Positionierung
+- Floating
+- Layout
+
+Inkl. kleinem Gast-Auftritt von VJ Wowo101 zum Thema „Grid-based Layouts“.
+
+Freitag 12.02.2010: Virginio & Dariusch
+---------------------------------------
+
+- Spezifizität von Selektoren
+- Vorstellung der verschiedenen Selektoren und deren Semantik
+- Vorstellung des Box-Models
 
 
 [1]: http://wiki.github.com/chriseppstein/compass/
