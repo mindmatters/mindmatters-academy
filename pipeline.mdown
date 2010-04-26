@@ -15,3 +15,10 @@ Rails Deployment
 
 Rock-Sven hat angeregt, dass er uns in einem Vortrag zeigt, wie ein typisches Rails-Deployment bei uns
 aussieht und welche Tools und Konzepte man kennen und beherrschen sollte.
+
+PostgreSQL
+----------
+
+In mehreren Projekten setzen wir bereits PostgreSQL ein oder planen das zumindest. Da sich das DB-System
+an verschiedenen Stellen von MySQL unterscheidet fände ich eine Einführung in das Thema von ein paar,
+die schon mit PostgreSQL gearbeitet haben, sinnvoll.
