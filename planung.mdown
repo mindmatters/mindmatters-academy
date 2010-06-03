@@ -1,10 +1,19 @@
 Vortragsplanung
 ===============
 
-Freitag, 14.05.2010: Gastvortrag
---------------------------------
+Freitag, 28.05.2010: Agiles Design - Prinzipien, Prozesse & Dokumente für kohärentes Interaktionsdesign in der Agilen Entwicklung
+---------------------------------------------------------------------------------------------------------------------------------
 
-Details hierzu folgen wenn bekannt.
+Wir freuen uns auf einen Gastvortrag von [Sebastian Detering][website-deterding], der uns seine Erfahrungen
+mit dem Zusammenspiel von Design und (Code-)Entwicklung in agilen Prozessen mitteilen wird. Mit konkreten
+Tipps und Übungen bekommen wir Anreize um unsere Prozesse zu verbessern.
+
+Freitag, 21.05.2010: Einführung in Informationsarchitektur und Interaktionsdesign
+---------------------------------------------------------------------------------
+
+Als Vorbereitung für den Vortrag von [Sebastian Detering][website-deterding] wollen wir uns mit ein
+paar grundlegenden Begriffen und Prinzipien von Informationsarchitektur und
+Interaktionsdesign beschäftigen.
 
 Freitag, 30.04.2010: Vom Papierprototypen zur HTML-Umsetzung
 ------------------------------------------------------------
@@ -102,3 +111,4 @@ Freitag 12.02.2010: Virginio & Dariusch
 
 [1]: http://wiki.github.com/chriseppstein/compass/
 [andy-clarkes-process]: http://twitter.com/Malarkey/status/4057082247
+[website-deterding]: http://www.codingconduct.cc
