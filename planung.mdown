@@ -1,6 +1,44 @@
 Vortragsplanung
 ===============
 
+Freitag, 16.07.2010: Hello, Android! (Dariusch, …)
+--------------------------------------------------
+
+Ein Grundkurs für die Entwicklung von Applikationen für das Android Betriebssystem, um eine Vorstellung von den
+Stärken und Schwächen der Plattform zu bekommen.
+
+Freitag, 09.07.2010: Hello, iPhone! (Benny, Jan)
+------------------------------------------------
+
+Ein Grundkurs für die Entwicklung von Applikationen für das iPhone OS, um eine Vorstellung von den
+Stärken und Schwächen der Plattform zu bekommen.
+
+Freitag, 25.06.2010: Konzeptionsworkshop
+----------------------------------------
+
+Wir haben eine konkrete Anfrage für eine mobile Applikation, die wir im Rahmen der academy als Beispiel
+entwickeln möchten. Für diesen Termin ist eine Vorstellung der Idee der Applikation und die Entwicklung
+eines Konzepts dafür angedacht, unter Verwendung aller Methoden und Hilfsmittel, die wir in der
+academy dafür gelernt haben.
+
+Freitag, 18.06.2010: Interaktionsdesign für mobile Geräte (Wolfgang?)
+---------------------------------------------------------------------
+
+Wie unterscheidet sich das Interaktionsdesign für Geräte, deren Formfaktor für den mobilen Einsatz
+konzipiert ist?
+
+Freitag, 11.06.2010: Formulardesign (Christopher)
+-------------------------------------------------
+
+Formulare sind das wichtigste Kommunikationsinterface einer Webanwendung mit dem Benutzer. Aus Usability-
+und Interaktionsdesign-Sicht kann man dabei aber viel falsch machen. Was man alles beachten sollte
+beim Formulardesign wird in diesem Vortrag vorgestellt.
+
+Freitag, 04.06.2010: Kurzer Einstieg in das große Thema „Software-Entwicklung für Mobile Devices“ (Jan)
+-------------------------------------------------------------------------------------------------------
+
+Jan gibt uns einen sehr großen und groben Überblick über unser nächstes Kernthema.
+
 Freitag, 28.05.2010: Agiles Design - Prinzipien, Prozesse & Dokumente für kohärentes Interaktionsdesign in der Agilen Entwicklung
 ---------------------------------------------------------------------------------------------------------------------------------
 
