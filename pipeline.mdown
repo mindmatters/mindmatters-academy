@@ -4,19 +4,10 @@ Themen-Pipeline
 Hier sammeln wir alles, für was wir noch keinen Termin haben, was aber unbedingt einmal vorgetragen
 werden soll.
 
-Best Practices des Formulardesigns
-----------------------------------
+Einführung in SEO
+-----------------
 
-Nichts hasst man als HTMLer mehr, als Formulare zu bauen, aber auch kaum etwas trägt mehr zur Akzeptanz
-eines Webdienstes bei. Mindestens ein Grund also, sich mal damit auseinanderzusetzen, welche
-grundlegenden Tricks und Kniffe man anwenden kann, um Formulare für den Anwender besser bedienbar zu machen.
-Letzendlich wollen wir unseren Blick schulen, um schlechtes Formulardesign erkennen und verbessern
-zu können.
-
-### Literatur
-
-* Wir haben das Buch [„Web Form Design“][Web-Form-Design] von Luke Wroblewski in der Bibliothek.
-* Diese [Präsentation von Timo Wirth][Mitmachbarrieren] zeigt kurz und knapp auf, um was es bei gutem Formulardesign geht.
+Benny hat sich bereiterklärt mit uns seine SEO-Erfahrungen zu teilen.
 
 Command Line: Advanced Tools and Concepts
 -----------------------------------------
@@ -36,6 +27,23 @@ PostgreSQL
 In mehreren Projekten setzen wir bereits PostgreSQL ein oder planen das zumindest. Da sich das DB-System
 an verschiedenen Stellen von MySQL unterscheidet fände ich eine Einführung in das Thema von ein paar,
 die schon mit PostgreSQL gearbeitet haben, sinnvoll.
+
+Abgehandelte Themen
+===================
+
+Best Practices des Formulardesigns
+----------------------------------
+
+Nichts hasst man als HTMLer mehr, als Formulare zu bauen, aber auch kaum etwas trägt mehr zur Akzeptanz
+eines Webdienstes bei. Mindestens ein Grund also, sich mal damit auseinanderzusetzen, welche
+grundlegenden Tricks und Kniffe man anwenden kann, um Formulare für den Anwender besser bedienbar zu machen.
+Letzendlich wollen wir unseren Blick schulen, um schlechtes Formulardesign erkennen und verbessern
+zu können.
+
+### Literatur
+
+* Wir haben das Buch [„Web Form Design“][Web-Form-Design] von Luke Wroblewski in der Bibliothek.
+* Diese [Präsentation von Timo Wirth][Mitmachbarrieren] zeigt kurz und knapp auf, um was es bei gutem Formulardesign geht.
 
 [Web-Form-Design]: http://www.lukew.com/resources/web_form_design.asp
 [Mitmachbarrieren]: http://www.slideshare.net/aperto/mitmachbarrieren-im-web-20
