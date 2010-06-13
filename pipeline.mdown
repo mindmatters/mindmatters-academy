@@ -7,7 +7,9 @@ werden soll.
 Einführung in SEO
 -----------------
 
-Benny hat sich bereiterklärt mit uns seine SEO-Erfahrungen zu teilen.
+Benny hat sich bereiterklärt mit uns seine SEO-Erfahrungen zu teilen. Vorschlag: Das Thema
+[durchaus kritisch][seo-is-mostly-quack-science] beleuchten, damit wir in der Lage sind uns
+einen Standpunkt dazu zu erarbeiten.
 
 Command Line: Advanced Tools and Concepts
 -----------------------------------------
@@ -47,3 +49,4 @@ zu können.
 
 [Web-Form-Design]: http://www.lukew.com/resources/web_form_design.asp
 [Mitmachbarrieren]: http://www.slideshare.net/aperto/mitmachbarrieren-im-web-20
+[seo-is-mostly-quack-science]: http://news.ycombinator.com/item?id=1426569
