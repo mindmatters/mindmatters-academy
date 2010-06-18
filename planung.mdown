@@ -43,11 +43,17 @@ entwickeln möchten. Für diesen Termin ist eine Vorstellung der Idee der Applik
 eines Konzepts dafür angedacht, unter Verwendung aller Methoden und Hilfsmittel, die wir in der
 academy dafür gelernt haben.
 
-Freitag, 18.06.2010: Interaktionsdesign für mobile Geräte (Wolfgang?)
----------------------------------------------------------------------
+Freitag, 18.06.2010: Interaktionsdesign für mobile Geräte
+---------------------------------------------------------
 
 Wie unterscheidet sich das Interaktionsdesign für Geräte, deren Formfaktor für den mobilen Einsatz
 konzipiert ist?
+
+### Kurzfristige Abänderung des geplanten Vortrags
+
+Wir schauen den [Screencast „Mobile User Experience Design“][mobile-user-experience-design] von Jeremy Lyon aus dem
+[Kurs „Developing Mobile Apps with Web Technologies“][developing-mobile-apps-with-web-technologies] der Stanford University an.
+Den Kurs gibt es auch auf [iTunes U][developing-mobile-apps-with-web-technologies-itunes].
 
 Freitag, 11.06.2010: Formulardesign (Christopher)
 -------------------------------------------------
@@ -174,3 +180,6 @@ Freitag 12.02.2010: Virginio & Dariusch
 [website-deterding]: http://www.codingconduct.cc
 [mobile-web-design-book]: http://mobilewebbook.com/
 [phonegap-talk]: http://jsconf.eu/2009/speaker/mobile_javascript_-_presenting.html
+[mobile-user-experience-design]: http://www.youtube.com/watch?v=SEwCRpTEgA0
+[developing-mobile-apps-with-web-technologies]: http://www.youtube.com/view_play_list?p=DD1386C4D784B56B
+[developing-mobile-apps-with-web-technologies-itunes]: http://deimos3.apple.com/WebObjects/Core.woa/Browse/itunes.stanford.edu.3682598547.03682598550.4031020699?i=2000275368
