@@ -35,6 +35,18 @@ In mehreren Projekten setzen wir bereits PostgreSQL ein oder planen das zumindes
 an verschiedenen Stellen von MySQL unterscheidet fände ich eine Einführung in das Thema von ein paar,
 die schon mit PostgreSQL gearbeitet haben, sinnvoll.
 
+Webanwendungen für mobile Geräte
+--------------------------------
+
+Viele mobile Geräte besitzen Webbrowser, die sich hinter ihren großen Brüdern auf Desktop-Betriebssystemen
+nicht verstecken müssen. Darüberhinaus sind die mobilen Varianten häufig um Schnittstellen zum Betriebssystem
+oder um Fähigkeiten erweitert, die im „gemeinen“ Webbrowser nicht verwendbar sind - ein Blick auf diese
+spezialisierten Browser lohnt sich also.
+
+### Literatur zum Thema
+
+* [Mobile Web Design - Ein Buch von Cameron Moll][mobile-web-design-book]
+
 Abgehandelte Themen
 ===================
 

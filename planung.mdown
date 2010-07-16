@@ -1,7 +1,7 @@
 Vortragsplanung
 ===============
 
-Freitag, 06.08.2010: PhoneGap
+Freitag, 23.07.2010: PhoneGap
 -----------------------------
 
 Aus unserer Sicht und unserer Erfahrung sind Projekte wie PhoneGap interessant, da sie eine Brücke schlagen
@@ -10,18 +10,6 @@ zwischen Entwicklung mit HTML, CSS und JavaScript und Entwicklung für mobile Ge
 Links zum Thema:
 
 * [Mobile JavaScript - Vortrag von Brian LeRoux auf der JSConf.eu 2009][phonegap-talk]
-
-Freitag, 23.07.2010: Webanwendungen für mobile Geräte
------------------------------------------------------
-
-Viele mobile Geräte besitzen Webbrowser, die sich hinter ihren großen Brüdern auf Desktop-Betriebssystemen
-nicht verstecken müssen. Darüberhinaus sind die mobilen Varianten häufig um Schnittstellen zum Betriebssystem
-oder um Fähigkeiten erweitert, die im „gemeinen“ Webbrowser nicht verwendbar sind - ein Blick auf diese
-spezialisierten Browser lohnt sich also.
-
-Literatur zum Thema:
-
-* [Mobile Web Design - Ein Buch von Cameron Moll][mobile-web-design-book]
 
 Freitag, 16.07.2010: Hello, Android! (Dariusch, …)
 --------------------------------------------------
