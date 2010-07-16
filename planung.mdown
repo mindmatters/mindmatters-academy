@@ -7,9 +7,22 @@ Freitag, 23.07.2010: PhoneGap
 Aus unserer Sicht und unserer Erfahrung sind Projekte wie PhoneGap interessant, da sie eine Brücke schlagen
 zwischen Entwicklung mit HTML, CSS und JavaScript und Entwicklung für mobile Geräte.
 
-Links zum Thema:
+### Links zum Thema
 
-* [Mobile JavaScript - Vortrag von Brian LeRoux auf der JSConf.eu 2009][phonegap-talk]
+#### PhoneGap
+
+* [Brian LeRoux: Mobile JavaScript][phonegap-talk]
+* [Brian LeRoux: Designing for the Device Neutral Mobile Web with JavaScript](http://oredev.org/Prod/Oredev/site.nsf/docsbycodename/session?opendocument&sid=BE0E878579C56F3FC125758C00744CB3&day=4&track=022317E241DB32A0C12575A500496F27)
+* [Converting an iPhone PhoneGap app to a Palm PhoneGap app in 10 minutes](http://blogs.nitobi.com/steve/?p=23)
+
+#### Alternativen
+
+* [13 Tools for Building Your Own iPhone App](http://www.readwriteweb.com/archives/13_tools_for_building_your_own_iphone_app.php)
+* [iPhone and Android Web Application Frameworks](http://distractable.net/coding/iphone-android-web-application-frameworks/)
+
+#### Allgemein
+
+* [Nikolai Onken: Creating Cross-plattform Mobile Applications in Dojo Toolkit](http://oredev.org/Prod/Oredev/site.nsf/docsbycodename/session?opendocument&sid=3AB2EED664F03C5AC12576010046AE0F&day=4&track=1FB45F966ACB6E94C12575A500497290)
 
 Freitag, 16.07.2010: Hello, Android! (Dariusch, …)
 --------------------------------------------------
@@ -42,6 +55,10 @@ konzipiert ist?
 Wir schauen den [Screencast „Mobile User Experience Design“][mobile-user-experience-design] von Jeremy Lyon aus dem
 [Kurs „Developing Mobile Apps with Web Technologies“][developing-mobile-apps-with-web-technologies] der Stanford University an.
 Den Kurs gibt es auch auf [iTunes U][developing-mobile-apps-with-web-technologies-itunes].
+
+### Links zum Thema
+
+* [Michael Samarin: Designing Mobile Applications: challenges of software and design houses](http://oredev.org/Prod/Oredev/site.nsf/docsbycodename/session?opendocument&sid=39A48E9075981D99C125759400503B17&day=5&track=022317E241DB32A0C12575A500496F27)
 
 Freitag, 11.06.2010: Formulardesign (Christopher)
 -------------------------------------------------
