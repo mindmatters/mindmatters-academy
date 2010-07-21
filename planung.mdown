@@ -24,6 +24,7 @@ zwischen Entwicklung mit HTML, CSS und JavaScript und Entwicklung für mobile Ge
 
 * [Nikolai Onken: Creating Cross-plattform Mobile Applications in Dojo Toolkit](http://oredev.org/Prod/Oredev/site.nsf/docsbycodename/session?opendocument&sid=3AB2EED664F03C5AC12576010046AE0F&day=4&track=1FB45F966ACB6E94C12575A500497290)
 * [Mobile Web Application Best Practices vom W3C](http://www.w3.org/TR/mwabp/)
+* [Jonathan Stark: Building Mobile Apps with HTML, CSS, and JavaScript](http://www.slideshare.net/jonathanstark/building-mobile-apps-with-html-css-and-javascript-4807782)
 
 Freitag, 16.07.2010: Hello, Android! (Dariusch, …)
 --------------------------------------------------
